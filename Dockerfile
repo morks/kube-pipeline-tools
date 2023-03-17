@@ -1,5 +1,5 @@
-FROM debian:latest 
+FROM alpine:latest 
 
-RUN apt-get update && apt-get install -y gnupg software-properties-common curl git rsync yq
+RUN apk add yq
 
 CMD ["bash"]
